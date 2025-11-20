@@ -1,0 +1,212 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        form {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+
+           .center{
+         display:block;
+         margin-left:auto;
+          margin-right:auto;
+      }
+    </style>
+</head>
+<body>
+
+<nav>
+ <a href="#form">Apply Now</a>
+   </nav>
+
+
+    
+
+    <section id="form">
+        <h2>Admission Form</h2>
+        <form action="contact.html" method="POST" >
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="Full_name" name="full_name" required>
+
+
+
+           
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+
+ <label for="Father_name">Father Name:</label>
+            <input type="text" id="Father_name" name="father_name" required>
+
+
+
+            <label for="Mother_name">Mother Name:</label>
+            <input type="text" id="Mother_name" name="mother_name" required>
+
+
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            
+
+
+<label for="Annual_income">Annual income</label>
+<select name="annual_income">
+<option value="Annual income"selected disable> annual_income</option>
+
+<option value="01"> Less than 50,000</option>
+
+<option value="01">50,000-1 lakh</option>
+<option value="01">1 lakh - 5 lakh</option>
+
+<option value="01">Above 5 lakh</option>
+
+
+
+</select>
+
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select --</option>
+               <option value="BCA Bachelor Of Computer Application">BCA Bachelor Of Computer Application</option>
+                <option value="BCS Bachelor Of computer Science">BCS Bachelor Of Computer Science </option>
+                <option value="BBA  Bachelor Of Business Administration"> BBA Bachelor Of Business Administration</option> 
+
+
+<option value="BSC Bachelor Of computer Science">BSC (Computer Science)</option>
+               
+
+
+
+
+                           </select>
+<label for="YEAR">Select year:</label>
+
+
+<select name="year">
+<option value="Year" selected disable>Year </option>
+
+<option value="01">First year</option>
+
+<option value="01">Second year</option>
+
+<option value="01">Third year</option>
+
+</select>
+
+<label for=" Last year persentage">Last year percentage:</label>
+            <input type="text" id="PERCENTAGE" name="percentage" required>
+
+
+
+<label for="MHT-CET">HAVE YOU GIVEN MHT-CET EXAM?:</label>
+
+<select name="mht_cet">
+<option value="MHT-CET" selected disable> MHT-CET</option>
+
+<option value="01">Yes</option>
+
+<option value="01">No</option>
+
+</select>
+
+<label for="persentile in MHT-CET EXAM">percentile in MHT-CET EXAM:</label>
+            <input type="text" id="PERCENTILE" name="percentile" required>
+
+
+
+
+            <label for="message">Additional Information (Optional):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+
+
+
+
+            
+</div>
+ <button type="submit">Next</button>
+
+        </form>
+    </section>
+
+    
+
+</body>
+</html>

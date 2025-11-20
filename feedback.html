@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admission Process Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f3;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 500px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            margin-top: 15px;
+            display: block;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Student Admission Process Feedback Form</h2>
+
+<form action="" method="POST">
+    <label for="name">Your Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email (optional):</label>
+    <input type="email" id="email" name="email">
+
+    <label for="experience">Overall, how would you rate the admission process?</label>
+    <select id="experience" name="experience" required>
+        <option value="">-- Select --</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+        <option value="very_poor">Very Poor</option>
+    </select>
+
+    <label for="communication">How would you rate the communication and support from the admission staff?</label>
+    <select id="communication" name="communication" required>
+        <option value="">-- Select --</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+    </select>
+
+    <label for="time">Was the admission process completed in a reasonable time?</label>
+    <select id="time" name="time" required>
+        <option value="">-- Select --</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="difficulties">Did you face any difficulties during the admission process?</label>
+    <textarea id="difficulties" name="difficulties" rows="4" placeholder="Please describe any issues..."></textarea>
+
+    <label for="suggestions">Any suggestions to improve the admission process?</label>
+    <textarea id="suggestions" name="suggestions" rows="4" placeholder="Write your suggestions here..."></textarea>
+
+    <button type="submit">Submit Feedback</button>
+</form>
+
+</body>
+</html>
